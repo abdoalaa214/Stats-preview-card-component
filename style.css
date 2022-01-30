@@ -1,0 +1,101 @@
+/* #0a0c1b */
+*{
+    margin: 0;
+}
+body{
+    height: 100vh;
+    background-color: #0a0c1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: #1c1938;
+    width: 1050px;
+    height: 55%;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: " . img";
+}
+.card .image{
+    grid-area: img;
+    width: 100%;
+    height: 96%;
+    position: relative;
+}
+.text-1{
+    color: white;
+    width: 80%;
+    display: block;
+    position: relative;
+    top: 15%;
+    left: 12%;
+    font-size: 2.1rem;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-1 .span{
+    color: hsl(277, 64%, 61%);
+}
+.text-2 {
+    color: hsla(0, 0%, 100%, 0.6);
+    width: 65%;
+    display: block;
+    position: relative;
+    top: 22%;
+    left: 12%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 25px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    top: 140px;
+    left: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    color: white;
+    display:block;
+    float: left;
+    text-align: center; 
+    padding: 16px;
+    text-decoration: none;
+    margin: auto 15px;
+}
+
+ul .one::after,
+ul .two::after,
+ul .three::after{
+    color: hsla(0, 0%, 100%, 0.6);
+    display: block;
+    position: relative;
+    top: 8px;
+    font-size: 0.75rem;
+    font-weight: 300;
+    font-family: Lexend Deca;
+}
+ul .one::after{
+    content: "COMPANIES";
+    left: 10px;
+}
+ul .two::after{
+    content: "TEMPLATES";
+    left: 12px;
+}
+ul .three::after{
+    content: "QUERIES";
+    left: -2px;
+}
+
+
+
