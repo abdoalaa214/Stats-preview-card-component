@@ -23,7 +23,7 @@ body{
 .card .image{
     grid-area: img;
     width: 100%;
-    height: 96%;
+    height: 100%;
     position: relative;
 }
 .text-1{
@@ -98,4 +98,11 @@ ul .three::after{
 }
 
 
+.overlay{
+    grid-area: img;
+    position:relative;
+    width:100%;
+    height:100%;
+    background: hsl(290deg 100% 25% / 48%);
+}
 
